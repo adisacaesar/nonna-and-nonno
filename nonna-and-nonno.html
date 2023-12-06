@@ -1,0 +1,124 @@
+<!-- 
+  
+  ARCHIVE
+
+  Create a single-page responsive website to archive a collection of 
+  content of your own choosing that uses interactivity in some way to 
+  explore the content. You may use any resources available to you, 
+  including searching online and using AI assistive tools to help you 
+  write and troubleshoot your code. 
+
+-->
+
+<!DOCTYPE html>
+
+<head>
+  <title>Nonna and Nonno</title>
+  <meta name="description" content="Description of my archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+
+<body>
+
+  <header>
+    <h1>With Love, Nonna and Nonno</h1>
+    <h2>This is a collection of photo of my italian grandparents. Their name's are Ida and Antonio and they were both
+      born in Abruzzo, Italy in 1940.</h2>
+  </header>
+
+
+
+
+  <main>
+
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="images/ida-antonio.jpg" alt="Nonno and Nonna when they were young.">
+        <img src="images/nonna-nonno.jpg" alt="Nonno and Nonna.">
+        <img src="images/nonno-nonna-frame.jpg" alt="Nonno and Nonna being silly with a frame.">
+        <!-- Add more images as needed -->
+      </div>
+      <button class="next-btn" onclick="changeSlide(1)">More</button>
+    </div>
+
+    <p class="carousel"> Here is a collection of photos of my nonno and nonna together. Photos of them smiling is rare,
+      they are always bickering but I like to think it's they're love language.
+    </p>
+  </main>
+
+
+
+
+  <h2 class="grid-title">This is Nonna Ida</h2>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="images/surprising-nonna.jpg" alt="Nonna surprised to see her grandchildren." class="fade-in">
+      <p class="fade-in">Nonna is always so excited to see her 3 grandchildren. She's definitely asking if we can stay
+        for espresso and how could we say no!</p>
+    </div>
+    <div class="grid-item">
+      <img src="images/fashion-nonna.jpg" alt="Nonna wearing my sunglasses and pink purse." class="fade-in">
+      <p class="fade-in">Nonna stole my look! She saw that my sunglasses matched her shirt and walked in the room and
+        said "Hey! Who wants to go shop?!"</p>
+    </div>
+    <div class="grid-item">
+      <img src="images/nonna-kitchen.jpg" alt="Italian Gothic" class="fade-in">
+      <p class="fade-in">This is my nonna in her kitchen. I took this for my photography class where we had to recreate
+        a famous photographer's photo. The photographer did a take on the painting 'American Gothic'. I called
+        this 'Italian Gothic'.</p>
+    </div>
+    <!-- Add more grid items as needed -->
+  </div>
+
+
+
+
+  <div class="background-image">
+  </div>
+   
+
+
+
+    <h2 class="grid-title2">This is Nonno Antonio</h2>
+
+    <div class="grid-container2">
+      <div class="grid-item2">
+        <img src="images/nonno-driving.jpg" alt="Nonno driving." class="fade-in">
+        <p class="fade-in">This is the last time I was passanger in my nonno's car. He's getting older and now I get to
+          drive him to the bank, doctor's, and the bakery to get fresh bread.</p>
+      </div>
+      <div class="grid-item2">
+        <img src="images/covidhair-nonno.jpg" alt="Nonno with long, beautiful covid hair." class="fade-in">
+        <p class="fade-in">Nonno loves to make us laugh! During dinner he walked out the room and came back with his
+          covid hair in a new style. Very chic!</p>
+      </div>
+      <div class="grid-item2">
+        <img src="images/nonno-garden.jpg" alt="Nonno in his garden." class="fade-in">
+        <p class="fade-in">Nonno is always in the garden checking on his tomatoes. When I took this photo he wanted
+          everyone to know he collects rain water in huge barrels to water his plants. So I'm guess that's the secret to
+          nice tomatoes. </p>
+      </div>
+      <!-- Add more grid items as needed -->
+    </div>
+
+    <script src="scripts.js"></script>
+
+
+
+
+    <footer class="site-footer">
+      <p class="scrolling-text">Alright, I have to go nonna's making gnocchi. Byeeee!</p>
+    </footer>
+
+</body>
+

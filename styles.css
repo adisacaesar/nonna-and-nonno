@@ -1,0 +1,211 @@
+/* ARCHIVE */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: antiquewhite;
+  color:#40240f;
+  margin: 0;
+  padding: 0; 
+  min-height: 100vh;
+  max-width: 100vw;
+  line-height: 1.3;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url(images/abruzzo.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+main{
+  background-color:rgb(204, 185, 160);
+}
+
+/* TYPOGRAPHY
+============================================================ */
+
+h1 {
+  font-size: 75px;
+
+
+}
+
+h2 {
+  font-size: 35px;
+  max-width: 50%;
+  text-align: left; 
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin:auto;
+  padding-bottom: 20px;
+  
+}
+
+/* CAROUSEL
+============================================================ */
+
+.carousel {
+  position:relative;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+
+}
+
+.carousel-images {
+  display:flex;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.carousel-images img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  padding: 20px;
+}
+
+ .next-btn {
+  transform: translateY(-195%);
+  background-color:#40240f;
+  color:white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Grid
+============================================================ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.grid-item {
+  text-align: left;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color:#40240f;
+}
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-title2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.grid-item2 {
+  text-align: left;
+}
+
+.grid-item2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item2 p {
+  margin-top: 10px;
+  font-size: 16px;
+  color:#40240f;
+}
+
+/* Grid Animation
+============================================================ */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+/* Dividing Background Image
+============================================================ */
+
+.background-image {
+  background-image: url('images/abruzzo-piazza.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* For responsiveness on smaller screens */
+@media screen and (max-width: 768px) {
+  .background-image {
+    min-height: 100vh;
+  }
+}
+
+/*Footer
+============================================================ */
+
+.site-footer {
+  background-color:rgb(204, 185, 160);
+  padding: 20px;
+  overflow: hidden; 
+}
+
+.scrolling-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollText 10s linear infinite; /* Adjust animation duration */
+  font-family: 'Fugaz One', sans-serif;
+  font-size: 40pt;
+  text-align: center;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
